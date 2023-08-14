@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Font Converter</title>
+</head>
+<body>
+    <h1>Text Font Converter</h1>
+    <label for="inputText">Entrez votre texte :</label><br>
+    <input type="text" id="inputText" name="inputText"><br><br>
+    <button type="button" onclick="convertText()">Convertir</button>
+    <p id="outputText"></p>
+
+    <script>
+        const specialChars = {
+            'a': 'ᵃ', 'b': 'ᵇ', 'c': 'ᶜ', 'd': 'ᵈ', 'e': 'ᵉ', 'f': 'ᶠ', 'g': 'ᵍ', 'h': 'ʰ', 'i': 'ⁱ', 'j': 'ʲ',
+            'k': 'ᵏ', 'l': 'ˡ', 'm': 'ᵐ', 'n': 'ⁿ', 'o': 'ᵒ', 'p': 'ᵖ', 'q': 'ᵠ', 'r': 'ʳ', 's': 'ˢ', 't': 'ᵗ',
+            'u': 'ᵘ', 'v': 'ᵛ', 'w': 'ʷ', 'x': 'ˣ', 'y': 'ʸ', 'z': 'ᶻ',
+        };
+
+        function convertText() {
+            const inputText = document.getElementById("inputText").value;
+            const outputText = document.getElementById("outputText");
+
+            const convertedText = inputText
+                .split("")
+                .map(char => specialChars[char] || char)
+                .join("");
+
+            outputText.textContent = convertedText;
+        }
+    </script>
+</body>
+</html>
