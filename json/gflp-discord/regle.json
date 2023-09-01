@@ -1,1 +1,48 @@
 
+{
+    "Titre": "Reglement",
+    "Reglement ETAT": "🟢 V3",
+    "date": "2021-11-24T20:00:00",
+    "Contenu": [
+        {
+            "Titre": "G- 0.1",
+            "Description": "Manquer de respect envers le serveur, les membres du personnel ou les autres utilisateurs est susceptible d'entraîner un avertissement."
+        },
+        {
+            "Titre": "G- 0.2",
+            "Description": "Le langage SMS est strictement prohibé. Vous devez vous exprimer dans un français correct. Les abréviations excessives ou l'utilisation de termes obscurs ne sont pas autorisées."
+        },
+        {
+            "Titre": "G- 0.3",
+            "Description": "Respectez et traitez tout le monde avec bienveillance. Il est essentiel de faire preuve de respect, de courtoisie et de politesse envers les autres utilisateurs. Un simple \"Bonjour\", \"Merci\" ou \"Au revoir\" peut contribuer à maintenir une atmosphère agréable."
+        },
+        {
+            "Titre": "G- 0.4",
+            "Description": "Le racisme, la discrimination, la xénophobie et toute forme de haine sont strictement interdits. Chacun doit être traité de manière équitable, indépendamment de sa race, de sa religion, de son origine ethnique, de son orientation sexuelle, de son genre ou de toute autre caractéristique personnelle."
+        },
+        {
+            "Titre": "G- 0.5",
+            "Description": "Il est strictement interdit de partager, se la peter en vers ces valeurs, diffuser ou discuter de contenu pornographique, sexuellement explicite, choquant ou offensant."
+        },
+        {
+            "Titre": "G- 0.6",
+            "Description": "Le Discord n'est pas un espace publicitaire. La promotion de produits, services, communautés ou liens externes sans autorisation préalable est interdite."
+        },
+        {
+            "Titre": "G- 0.7",
+            "Description": "Les comportements de troll, les provocations intentionnelles ou toute autre action visant à perturber ou à nuire à l'expérience des utilisateurs sont strictement proscrits."
+        },
+        {
+            "Titre": "G- 0.8",
+            "Description": "L'utilisation excessive ou inappropriée des mentions (@pseudo) est interdite. Veillez à ne les utiliser qu'en cas de nécessité ou de communication importante."
+        },
+        {
+            "Titre": "G- 0.9",
+            "Description": "Les insultes, les propos offensants, les attaques personnelles ou toute autre forme d'irrespect envers les utilisateurs sont strictement prohibés. Nous encourageons un dialogue respectueux et constructif."
+        },
+        {
+            "Titre": "G- 1.0",
+            "Description": "Tout discours de haine ou de stigmatisation envers une religion, y compris l'islam ou toute autre croyance, est totalement prohibé. Le respect mutuel est essentiel."
+        }
+    ]
+}
