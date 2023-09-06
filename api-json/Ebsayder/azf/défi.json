@@ -1,1 +1,31 @@
 
+
+{
+  "date": "Mercredi 06 septembre 2023 à 22:35",
+  "team": "GFLP - LSP • SRDMG",
+  "articles": [
+    {
+      "article": " 1 ",
+      "section": " 2 ",
+      "content": " 3 "
+    },
+
+
+    {
+      "article": "F-15 |  Uplift-5233  | Type : Finie /🛬/",
+      "section": "  | ' time : 13:35  Fin : 13:43' | - | ' Piste : 29  - Piste s : -- ' | .",
+      "content": " Decolage de ' perth ' ' int ' pour allez  a ' orenji ' ' tokyo '   | 'pasager: V / A et nombres ' | - | ' pilote : V   - copilote : V / A ' |   "
+    },
+
+
+    
+
+   
+    
+    {
+      "article": "Type Avion | id-number | Type : Debut-Fin /🛬🛫/ ",
+      "section": "  | ' time : A/A  Fin : A/A ' | - | ' Piste : N / A - Piste s : N / A ' | .",
+      "content": " Decolage de ' pays ' ' ville ' pour allez  a ' pays ' ' ville '   | 'pasager: V / A et nombres ' | - | ' pilote : V / A - copilote : V / A ' |   "
+    }
+  ]
+}
