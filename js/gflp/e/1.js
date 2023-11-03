@@ -1,28 +1,24 @@
-if (window.location.href.indexOf('https://pikayutmg.github.io/redirect/ban.html') === -1) {
-    var redirectURL = 'https://pikayutmg.github.io/redirect/ban.html'; // Remplacez par l'URL de la page de redirection
-
-    // Fonction pour obtenir l'adresse IP du visiteur
-    function getVisitorIP() {
-        fetch('https://api64.ipify.org?format=json')
-            .then(response => response.json())
-            .then(data => {
-                var visitorIP = data.ip;
-
-                // Charger la liste d'adresses IP bannies depuis le fichier JSON
-                fetch('https://enesGP.github.io/ban.json') // Mettez le lien complet vers votre fichier JSON
-                    .then(response => response.json())
-                    .then(data => {
-                        var bannedIPs = data.bannedIPs;
-
-                        if (bannedIPs.includes(visitorIP)) {
-                            window.location.href = redirectURL;
-                        }
-                    })
-                    .catch(error => console.error(error));
-            })
-            .catch(error => console.error(error));
-    }
-
-    // Appelez la fonction pour obtenir l'adresse IP du visiteur
-    getVisitorIP();
+// Fonction pour vérifier si l'adresse IP de l'utilisateur est dans la liste noire
+function isIpBannie(adresseIpUtilisateur, ipListeNoire) {
+    return ipListeNoire.includes(adresseIpUtilisateur);
 }
+
+// Fonction pour effectuer la redirection si l'adresse IP est bannie
+function verifierEtRediriger(adresseIpUtilisateur, ipListeNoire) {
+    if (isIpBannie(adresseIpUtilisateur, ipListeNoire)) {
+        // Rediriger l'utilisateur vers la page de bannissement
+        window.location.href = "https://pikayutmg.github.io/redirect/ban.html";
+    }
+}
+
+// Récupérer la liste des adresses IP et l'adresse IP de l'utilisateur à partir du fichier JSON distant
+fetch("https://enesgp.github.io/ban.json")
+    .then(response => response.json())
+    .then(data => {
+        const adresseIpUtilisateur = data.adresseIpUtilisateur;
+        const ipListeNoire = data.ipBannies;
+        verifierEtRediriger(adresseIpUtilisateur, ipListeNoire);
+    })
+    .catch(error => {
+        console.error("Erreur lors de la récupération des données depuis le fichier JSON : " + error);
+    });
