@@ -7,7 +7,7 @@ function isIpBannie(adresseIpUtilisateur, ipListeNoire) {
 function verifierEtRediriger(adresseIpUtilisateur, ipListeNoire) {
     if (isIpBannie(adresseIpUtilisateur, ipListeNoire)) {
         // Rediriger l'utilisateur vers la page de bannissement
-        window.location.href = "https://pikayutmg.github.io/redirect/ban.html";
+        window.location.href = "https://pikayutmg.github.io/redirect/beta.html";
     }
 }
 
