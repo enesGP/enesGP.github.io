@@ -1,1 +1,3 @@
-
+{
+    "emails": ["destinataire1@example.com", "destinataire2@example.com", "destinataire3@example.com"]
+}
